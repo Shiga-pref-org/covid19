@@ -4,8 +4,8 @@
       :title="$t('PCR検査実施件数')"
       :title-id="'number-of-tests'"
       :chart-id="'time-bar-chart-tnumber-of-tests'"
-      :chart-data="testsGraph"
-      :date="Data.tests.date"
+      :chart-data="chartData"
+      :date="date"
       :unit="$t('件')"
     />
   </v-col>
@@ -21,7 +21,6 @@
 </i18n>
 
 <script>
-import Data from '@/data/data.json'
 import formatGraph from '@/utils/formatGraph'
 import TimeBarChart from '@/components/TimeBarChart.vue'
 
@@ -29,15 +28,20 @@ export default {
   components: {
     TimeBarChart
   },
-  data() {
-    // 検査実施数グラフ
-    const testsGraph = formatGraph(Data.tests.data)
-
-    const data = {
-      Data,
-      testsGraph
+  props: {
+    date: {
+      type: String,
+      default: ''
+    },
+    data: {
+      type: Array,
+      default: () => []
     }
-    return data
+  },
+  computed: {
+    chartData() {
+      return formatGraph(this.data)
+    }
   }
 }
 </script>

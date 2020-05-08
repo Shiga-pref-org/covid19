@@ -6,7 +6,7 @@
       :chart-id="'ohashi-trafic-bar-chart'"
       :chart-data="ohashiGraph"
       :chart-option="ohashiGraphOption"
-      :date="ohashiGraph.date"
+      :date="date"
     />
   </v-col>
 </template>
@@ -14,12 +14,24 @@
 <i18n src="./OhashiTrafic.i18n.json"></i18n>
 
 <script>
-import Data from '@/data/data.json'
 import OhashiTraficBarChart from '@/components/OhashiTraficBarChart.vue'
 
 export default {
   components: {
     OhashiTraficBarChart
+  },
+  props: {
+    data: {
+      type: Object,
+      default: () => ({
+        transition: { datasets: [] },
+        average: { datasets: [] }
+      })
+    },
+    date: {
+      type: String,
+      default: ''
+    }
   },
   data() {
     // ohashiGraph ツールチップ title文字列
@@ -42,8 +54,7 @@ export default {
     }
 
     const data = {
-      Data,
-      ohashiGraph: Data.ohashi,
+      ohashiGraph: this.data,
       ohashiGraphOption: {
         responsive: true,
         legend: {

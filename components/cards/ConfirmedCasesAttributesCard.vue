@@ -5,7 +5,7 @@
       :title-id="'attributes-of-confirmed-cases'"
       :chart-data="patientsTable"
       :chart-option="{}"
-      :date="Data.patients.date"
+      :date="date"
       :info="sumInfoOfPatients"
     />
   </v-col>
@@ -125,7 +125,6 @@
 </i18n>
 
 <script>
-import Data from '@/data/data.json'
 import formatGraph from '@/utils/formatGraph'
 import formatTable from '@/utils/formatTable'
 import DataTable from '@/components/DataTable.vue'
@@ -134,46 +133,60 @@ export default {
   components: {
     DataTable
   },
-  data() {
-    // 感染者数グラフ
-    const patientsGraph = formatGraph(Data.patients_summary.data)
-    // 感染者数
-    const patientsTable = formatTable(Data.patients.data)
-
-    const sumInfoOfPatients = {
-      lText: patientsGraph[
-        patientsGraph.length - 1
-      ].cumulative.toLocaleString(),
-      sText: this.$t('{date}の累計', {
-        date: patientsGraph[patientsGraph.length - 1].label
-      }),
-      unit: this.$t('人')
+  props: {
+    summary: {
+      type: Array,
+      default: () => []
+    },
+    data: {
+      type: Array,
+      default: () => []
+    },
+    date: {
+      type: String,
+      default: ''
     }
+  },
+  computed: {
+    patientsTable() {
+      // 感染者数
+      const patientsTable = formatTable(this.data)
 
-    // 陽性患者の属性 ヘッダー翻訳
-    for (const header of patientsTable.headers) {
-      header.text =
-        header.value === '退院' ? this.$t('退院') : this.$t(header.value)
-    }
-    // 陽性患者の属性 中身の翻訳
-    for (const row of patientsTable.datasets) {
-      row['居住地'] = this.$t(row['居住地'])
-      row['性別'] = this.$t(row['性別'])
-
-      if (row['年代'] === '10歳未満') {
-        row['年代'] = this.$t('10歳未満')
-      } else {
-        const age = row['年代'].substring(0, 2)
-        row['年代'] = this.$t('{age}代', { age })
+      // 陽性患者の属性 ヘッダー翻訳
+      for (const header of patientsTable.headers) {
+        header.text =
+          header.value === '退院' ? this.$t('退院') : this.$t(header.value)
       }
-    }
+      // 陽性患者の属性 中身の翻訳
+      for (const row of patientsTable.datasets) {
+        row['居住地'] = this.$t(row['居住地'])
+        row['性別'] = this.$t(row['性別'])
 
-    const data = {
-      Data,
-      patientsTable,
-      sumInfoOfPatients
+        if (row['年代'] === '10歳未満') {
+          row['年代'] = this.$t('10歳未満')
+        } else {
+          const age = row['年代'].substring(0, 2)
+          row['年代'] = this.$t('{age}代', { age })
+        }
+      }
+      return patientsTable
+    },
+    sumInfoOfPatients() {
+      // 感染者数グラフ
+      const patientsGraph = formatGraph(this.summary)
+
+      const sumInfoOfPatients = {
+        lText: patientsGraph[
+          patientsGraph.length - 1
+        ].cumulative.toLocaleString(),
+        sText: this.$t('{date}の累計', {
+          date: patientsGraph[patientsGraph.length - 1].label
+        }),
+        unit: this.$t('人')
+      }
+
+      return sumInfoOfPatients
     }
-    return data
   }
 }
 </script>

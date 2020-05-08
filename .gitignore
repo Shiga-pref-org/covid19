@@ -94,7 +94,3 @@ sw.*
 
 # OGP images
 ogp/*
-
-# Data
-data/*
-!data/README.md

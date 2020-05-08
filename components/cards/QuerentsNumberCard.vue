@@ -4,8 +4,8 @@
       :title="$t('帰国者・接触者相談センター相談件数')"
       :title-id="'number-of-querents'"
       :chart-id="'time-bar-chart-number-of-querents'"
-      :chart-data="querentsGraph"
-      :date="Data.querents.date"
+      :chart-data="chartData"
+      :date="date"
       :unit="$t('件')"
     />
   </v-col>
@@ -21,7 +21,6 @@
 </i18n>
 
 <script>
-import Data from '@/data/data.json'
 import formatGraph from '@/utils/formatGraph'
 import TimeBarChart from '@/components/TimeBarChart.vue'
 
@@ -29,15 +28,20 @@ export default {
   components: {
     TimeBarChart
   },
-  data() {
-    // 帰国者・接触者相談センター相談数グラフ
-    const querentsGraph = formatGraph(Data.querents.data)
-
-    const data = {
-      Data,
-      querentsGraph
+  props: {
+    date: {
+      type: String,
+      default: ''
+    },
+    data: {
+      type: Array,
+      default: () => []
     }
-    return data
+  },
+  computed: {
+    chartData() {
+      return formatGraph(this.data)
+    }
   }
 }
 </script>

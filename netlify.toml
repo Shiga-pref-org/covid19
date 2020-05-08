@@ -6,5 +6,5 @@
   for = "/*"
 
 [build]
-  command = 'yarn &&yarn updateData&& yarn updateFlow && npm run generate:deploy'
+  command = 'yarn yarn updateFlow && npm run generate:deploy'
   publish = 'dist'

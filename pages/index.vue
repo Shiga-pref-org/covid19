@@ -3,19 +3,38 @@
     <page-header
       :icon="headerItem.icon"
       :title="headerItem.title"
-      :date="headerItem.date"
+      :date="lastUpdate"
     />
     <hero-link class="mb-4" />
     <whats-new class="mb-4" :items="newsItems" />
     <v-row class="DataBlock">
-      <confirmed-cases-number-card />
-      <confirmed-cases-attributes-card />
-      <consults-number-card />
-      <tests-number-card />
-      <querents-number-card />
-      <general-querents-number-card />
-      <ohashi-trafic-card />
-      <line-invitation-card />
+      <confirmed-cases-number-card
+        :data="data.patients_summary.data"
+        :date="data.patients_summary.date"
+      />
+      <confirmed-cases-attributes-card
+        :summary="data.patients_summary.data"
+        :data="data.patients.data"
+        :date="data.patients.date"
+      />
+      <consults-number-card
+        :data="data.consults.data"
+        :date="data.consults.date"
+      />
+      <tests-number-card :data="data.tests.data" :date="data.tests.date" />
+      <querents-number-card
+        :data="data.querents.data"
+        :date="data.querents.date"
+      />
+      <general-querents-number-card
+        :data="data.generalQuerents.data"
+        :date="data.generalQuerents.date"
+      />
+      <ohashi-trafic-card :data="data.ohashi" :date="data.ohashi.date" />
+      <line-invitation-card
+        :value="data.lineFriends.value"
+        :date="data.lineFriends.date"
+      />
     </v-row>
   </div>
 </template>
@@ -23,11 +42,10 @@
 <i18n src="./index.i18n.json"></i18n>
 
 <script>
+import axios from 'axios'
 import PageHeader from '@/components/PageHeader.vue'
 import WhatsNew from '@/components/WhatsNew.vue'
-import Data from '@/data/data.json'
 
-import News from '@/data/news.json'
 import HeroLink from '@/components/cards/HeroLink.vue'
 
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
@@ -53,23 +71,36 @@ export default {
     OhashiTraficCard,
     LineInvitationCard
   },
+  asyncData() {
+    return Promise.all([
+      axios
+        .get('https://shiga-pref-org.github.io/covid19-data/data.json')
+        .then(res => res.data),
+      axios
+        .get('https://shiga-pref-org.github.io/covid19-data/news.json')
+        .then(res => res.data.newsItems)
+    ]).then(([data, newsItems]) => {
+      // 退院者グラフ
+      // const dischargesGraph = formatGraph(Data.discharges_summary.data)
+      // 死亡者数
+      // #MEMO: 今後使う可能性あるので一時コメントアウト
+      // const fatalitiesTable = formatTable(
+      //   Data.patients.data.filter(patient => patient['備考'] === '死亡')
+      // )
+      return {
+        data,
+        /* dischargesGraph, */
+        lastUpdate: data.lastUpdate,
+        newsItems
+      }
+    })
+  },
   data() {
-    // 退院者グラフ
-    // const dischargesGraph = formatGraph(Data.discharges_summary.data)
-    // 死亡者数
-    // #MEMO: 今後使う可能性あるので一時コメントアウト
-    // const fatalitiesTable = formatTable(
-    //   Data.patients.data.filter(patient => patient['備考'] === '死亡')
-    // )
     const data = {
-      Data,
-      /* dischargesGraph, */
       headerItem: {
         icon: 'mdi-chart-timeline-variant',
-        title: this.$t('県内の最新感染動向'),
-        date: Data.lastUpdate
-      },
-      newsItems: News.newsItems
+        title: this.$t('県内の最新感染動向')
+      }
     }
     return data
   },

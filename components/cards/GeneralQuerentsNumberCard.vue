@@ -4,8 +4,8 @@
       :title="$t('新型コロナウイルスに関する一般相談件数')"
       :title-id="'number-of-general-querents'"
       :chart-id="'time-bar-chart-number-of-general-querents'"
-      :chart-data="generalQuerentsGraph"
-      :date="Data.generalQuerents.date"
+      :chart-data="chartData"
+      :date="date"
       :unit="$t('件')"
     />
   </v-col>
@@ -21,7 +21,6 @@
 </i18n>
 
 <script>
-import Data from '@/data/data.json'
 import formatGraph from '@/utils/formatGraph'
 import TimeBarChart from '@/components/TimeBarChart.vue'
 
@@ -29,15 +28,20 @@ export default {
   components: {
     TimeBarChart
   },
-  data() {
-    // 新型コロナウイルスに関する一般相談件数
-    const generalQuerentsGraph = formatGraph(Data.generalQuerents.data)
-
-    const data = {
-      Data,
-      generalQuerentsGraph
+  props: {
+    date: {
+      type: String,
+      default: ''
+    },
+    data: {
+      type: Array,
+      default: () => []
     }
-    return data
+  },
+  computed: {
+    chartData() {
+      return formatGraph(this.data)
+    }
   }
 }
 </script>

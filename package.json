@@ -19,7 +19,6 @@
         "lint": "eslint './**/*.{js,ts,vue}'",
         "lint:fix": "eslint './**/*.{js,ts,vue}' --fix",
         "clean-hardsource": "rimraf ./node_modules/.cache/hard-source",
-        "updateData": "node tool/updateData.js",
         "clearCache": "rm -rf node_modules/.cache 2> /dev/null",
         "updateFlow": "npm run clearCache && node tool/updateFlow.js"
     },
