@@ -4,8 +4,8 @@
       :title="$t('陽性患者数')"
       :title-id="'number-of-confirmed-cases'"
       :chart-id="'time-bar-chart-patients'"
-      :chart-data="patientsGraph"
-      :date="Data.patients_summary.date"
+      :chart-data="chartData"
+      :date="date"
       :unit="$t('人')"
     />
   </v-col>
@@ -41,7 +41,6 @@
 </i18n>
 
 <script>
-import Data from '@/data/data.json'
 import formatGraph from '@/utils/formatGraph'
 import TimeBarChart from '@/components/TimeBarChart.vue'
 
@@ -49,15 +48,20 @@ export default {
   components: {
     TimeBarChart
   },
-  data() {
-    // 感染者数グラフ
-    const patientsGraph = formatGraph(Data.patients_summary.data)
-
-    const data = {
-      Data,
-      patientsGraph
+  props: {
+    date: {
+      type: String,
+      default: ''
+    },
+    data: {
+      type: Array,
+      default: () => []
     }
-    return data
+  },
+  computed: {
+    chartData() {
+      return formatGraph(this.data)
+    }
   }
 }
 </script>

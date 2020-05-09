@@ -46,7 +46,6 @@ Issues にあるいろいろな修正にご協力いただけると嬉しいで�
 ```bash
 # install dependencies
 $ yarn install
-$ yarn updateData #<-This script downloads data anc creatte json at /data
 $ yarn updateFlow # このスクリプトは、 /support/ ページをshiga-pref/covid19-flow から取得して更新します
 # serve with hot reload at localhost:3000
 $ yarn dev

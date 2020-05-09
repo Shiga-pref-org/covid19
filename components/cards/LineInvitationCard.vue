@@ -48,18 +48,20 @@
 <style lang="scss" scoped></style>
 
 <script>
-import Data from '@/data/data.json'
 import SimpleNumberCard from '@/components/SimpleNumberCard.vue'
 
 export default {
   components: {
     SimpleNumberCard
   },
+  props: {
+    value: { type: String, default: '' },
+    date: { type: String, default: '' }
+  },
   data() {
-    const number = parseInt(Data.lineFriends.value, 10)
+    const number = parseInt(this.value, 10)
     const data = {
-      number: Number.isNaN(number) ? 0 : number,
-      date: Data.lineFriends.date
+      number: Number.isNaN(number) ? 0 : number
     }
     return data
   }
