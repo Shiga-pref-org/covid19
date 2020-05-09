@@ -6,8 +6,8 @@
       :date="lastUpdate"
     />
     <hero-link class="mb-4" />
-    <whats-new class="mb-4" :items="newsItems" />
-    <v-row class="DataBlock">
+    <whats-new v-if="newsItems" class="mb-4" :items="newsItems" />
+    <v-row v-if="data" class="DataBlock">
       <confirmed-cases-number-card
         :data="data.patients_summary.data"
         :date="data.patients_summary.date"
@@ -42,7 +42,6 @@
 <i18n src="./index.i18n.json"></i18n>
 
 <script>
-import axios from 'axios'
 import PageHeader from '@/components/PageHeader.vue'
 import WhatsNew from '@/components/WhatsNew.vue'
 
@@ -71,38 +70,29 @@ export default {
     OhashiTraficCard,
     LineInvitationCard
   },
-  asyncData() {
-    return Promise.all([
-      axios
-        .get('https://shiga-pref-org.github.io/covid19-data/data.json')
-        .then(res => res.data),
-      axios
-        .get('https://shiga-pref-org.github.io/covid19-data/news.json')
-        .then(res => res.data.newsItems)
-    ]).then(([data, newsItems]) => {
-      // 退院者グラフ
-      // const dischargesGraph = formatGraph(Data.discharges_summary.data)
-      // 死亡者数
-      // #MEMO: 今後使う可能性あるので一時コメントアウト
-      // const fatalitiesTable = formatTable(
-      //   Data.patients.data.filter(patient => patient['備考'] === '死亡')
-      // )
-      return {
-        data,
-        /* dischargesGraph, */
-        lastUpdate: data.lastUpdate,
-        newsItems
-      }
-    })
-  },
   data() {
-    const data = {
+    return {
+      data: undefined,
+      lastUpdate: '',
+      newsItem: undefined,
       headerItem: {
         icon: 'mdi-chart-timeline-variant',
         title: this.$t('県内の最新感染動向')
       }
     }
-    return data
+  },
+  async mounted() {
+    const [data, newsItems] = await Promise.all([
+      fetch(
+        'https://shiga-pref-org.github.io/covid19-data/data.json'
+      ).then(res => res.json()),
+      fetch('https://shiga-pref-org.github.io/covid19-data/news.json')
+        .then(res => res.json())
+        .then(json => json.newsItems)
+    ])
+    this.data = data
+    this.lastUpdate = data.lastUpdate
+    this.newsItems = newsItems
   },
   head() {
     return {

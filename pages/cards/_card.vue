@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="data">
     <confirmed-cases-number-card
       v-if="this.$route.params.card == 'number-of-confirmed-cases'"
       :data="data.patients_summary.data"
@@ -128,8 +128,6 @@
 </i18n>
 
 <script>
-import axios from 'axios'
-
 import GeneralQuerentsNumberCard from '@/components/cards/GeneralQuerentsNumberCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
@@ -160,47 +158,34 @@ export default {
     // TelephoneAdvisoryReportsNumberCard,
     // ConsultationDeskReportsNumberCard
   },
-  asyncData() {
-    return axios
-      .get('https://shiga-pref-org.github.io/covid19-data/data.json')
-      .then(res => ({ data: res.data, x: 'aaa' }))
-  },
   data() {
-    let title, dateSelector
+    let title
     switch (this.$route.params.card) {
       case 'number-of-confirmed-cases':
         title = this.$t('陽性患者数')
-        dateSelector = data => data.patients.date
         break
       case 'attributes-of-confirmed-cases':
         title = this.$t('陽性患者の属性')
-        dateSelector = data => data.patients.date
         break
       case 'number-of-consultation':
         title = this.$t('帰国者・接触者専門外来受診件数')
-        dateSelector = data => data.consults.date
         break
       case 'number-of-tests':
         title = this.$t('PCR検査実施件数')
-        dateSelector = data => data.tests.date
         break
       case 'number-of-querents':
         title = this.$t('帰国者・接触者相談センター相談件数')
-        dateSelector = data => data.querents.date
         break
       case 'number-of-general-querents':
         title = this.$t('新型コロナウイルスに関する一般相談件数')
-        dateSelector = data => data.generalQuerents.date
         break
       case 'ohashi-trafic':
         title = this.$t('琵琶湖大橋通行台数')
-        dateSelector = data => data.ohashi.date
         break
       case 'line-invitation':
         title = this.$t(
           'LINE公式アカウント「滋賀県-新型コロナ対策パーソナルサポート」友だち数'
         )
-        dateSelector = data => data.lineFriends.date
         break
 
       // case 'details-of-confirmed-cases':
@@ -221,10 +206,16 @@ export default {
       //   break
     }
 
-    return { title, dateSelector }
+    return { title, lastUpdate: '', data: undefined }
+  },
+  async mounted() {
+    const data = await fetch(
+      'https://shiga-pref-org.github.io/covid19-data/data.json'
+    ).then(res => res.json())
+    this.data = data
+    this.lastUpdate = data.lastUpdate
   },
   head() {
-    const updatedAt = this.dateSelector(this.data)
     const url = 'https://stopcovid19.pref.shiga.jp'
     const timestamp = new Date().getTime()
     const ogpImage =
@@ -235,12 +226,9 @@ export default {
       this.$route.params.card +
       '.png?t=' +
       timestamp
-    const description =
-      updatedAt +
-      ' | ' +
-      this.$t(
-        '当サイトは新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するために、滋賀県が開設したものです。'
-      )
+    const description = this.$t(
+      '当サイトは新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するために、滋賀県が開設したものです。'
+    )
 
     return {
       title: this.title,

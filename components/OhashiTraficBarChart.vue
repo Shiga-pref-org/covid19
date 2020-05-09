@@ -104,14 +104,18 @@ export default {
       } else {
         const { datasets } = this.chartData[this.dataKind]
         const lastData = datasets[datasets.length - 1]
-        const [, month, dateDay] = lastData.label.split(' vs. ')[1].split('/')
+        const [, month, dateDay] = lastData
+          ? lastData.label.split(' vs. ')[1].split('/')
+          : ['--', '--', '--']
         const date = dateDay.replace(/\(.\)/g, '')
 
         return {
-          lText: lastData.data[1].toLocaleString(),
+          lText: lastData ? lastData.data[1].toLocaleString() : '-',
           sText: this.$t('{date} 前年の同時期との比較: {percent}%', {
             date: `${month}/${date}`,
-            percent: Math.round((100 * lastData.data[1]) / lastData.data[0])
+            percent: lastData
+              ? Math.round((100 * lastData.data[1]) / lastData.data[0])
+              : '-'
           }),
           unit: this.$t('台')
         }
