@@ -8,6 +8,11 @@
     <hero-link class="mb-4" />
     <whats-new v-if="newsItems" class="mb-4" :items="newsItems" />
     <v-row v-if="data" class="DataBlock">
+      <!-- TODO:データ連携はまだ作成していない -->
+      <current-cases-number-card
+        :data="data.patients_summary.data"
+        :date="data.patients_summary.date"
+      />
       <confirmed-cases-number-card
         :data="data.patients_summary.data"
         :date="data.patients_summary.date"
@@ -47,6 +52,7 @@ import WhatsNew from '@/components/WhatsNew.vue'
 
 import HeroLink from '@/components/cards/HeroLink.vue'
 
+import CurrentCasesNumberCard from '@/components/cards/CurrentCasesNumberCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 import ConsultsNumberCard from '@/components/cards/ConsultsNumberCard'
@@ -61,6 +67,7 @@ export default {
     PageHeader,
     HeroLink,
     WhatsNew,
+    CurrentCasesNumberCard,
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
     ConsultsNumberCard,
