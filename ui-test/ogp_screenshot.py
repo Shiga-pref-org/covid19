@@ -6,6 +6,7 @@ os.mkdir('ogp')
 PATHS = {
     '/?dummy': [959,500],
     '/cards/number-of-current-cases': [959,500],
+    '/cards/number-of-treated-cases': [959,500],
     '/cards/number-of-confirmed-cases': [959,500],
     '/cards/details-of-confirmed-cases': [959,500],
     '/cards/attributes-of-confirmed-cases': [959,480],

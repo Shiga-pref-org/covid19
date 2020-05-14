@@ -13,6 +13,11 @@
         :data="data.patients_summary.data"
         :date="data.patients_summary.date"
       />
+      <!-- TODO:データ連携はまだ作成していない -->
+      <treated-cases-number-card
+        :data="data.patients_summary.data"
+        :date="data.patients_summary.date"
+      />
       <confirmed-cases-number-card
         :data="data.patients_summary.data"
         :date="data.patients_summary.date"
@@ -52,6 +57,7 @@ import WhatsNew from '@/components/WhatsNew.vue'
 
 import HeroLink from '@/components/cards/HeroLink.vue'
 
+import TreatedCasesNumberCard from '@/components/cards/TreatedCasesNumberCard.vue'
 import CurrentCasesNumberCard from '@/components/cards/CurrentCasesNumberCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
@@ -67,6 +73,7 @@ export default {
     PageHeader,
     HeroLink,
     WhatsNew,
+    TreatedCasesNumberCard,
     CurrentCasesNumberCard,
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,

@@ -6,6 +6,12 @@
       :data="data.patients_summary.data"
       :date="data.patients_summary.date"
     />
+    <!-- TODO: データ連携はまだ作成していない -->
+    <treated-cases-number-card
+      v-if="this.$route.params.card == 'number-of-treated-cases'"
+      :data="data.patients_summary.data"
+      :date="data.patients_summary.date"
+    />
     <confirmed-cases-number-card
       v-if="this.$route.params.card == 'number-of-confirmed-cases'"
       :data="data.patients_summary.data"
@@ -73,6 +79,7 @@
   "ja": {
     "検査陽性者の状況": "検査陽性者の状況",
     "現在患者数": "現在患者数",
+    "治療終了者数": "治療終了者数",
     "陽性患者数": "陽性患者数",
     "陽性患者の属性": "陽性患者の属性",
     "検査実施数": "検査実施数",
@@ -135,6 +142,7 @@
 </i18n>
 
 <script>
+import TreatedCasesNumberCard from '@/components/cards/TreatedCasesNumberCard.vue'
 import GeneralQuerentsNumberCard from '@/components/cards/GeneralQuerentsNumberCard.vue'
 import CurrentCasesNumberCard from '@/components/cards/CurrentCasesNumberCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
@@ -152,6 +160,7 @@ import LineInvitationCard from '@/components/cards/LineInvitationCard.vue'
 
 export default {
   components: {
+    TreatedCasesNumberCard,
     CurrentCasesNumberCard,
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
@@ -172,6 +181,9 @@ export default {
     switch (this.$route.params.card) {
       case 'number-of-current-cases':
         title = this.$t('現在患者数')
+        break
+      case 'number-of-treated-cases':
+        title = this.$t('治療終了者数')
         break
       case 'number-of-confirmed-cases':
         title = this.$t('陽性患者数')

@@ -242,6 +242,7 @@ const config: Configuration = {
       const locales = ['ja' /*, 'en', 'zh-cn', 'zh-tw', 'ko', 'ja-basic' */]
       const pages = [
         '/cards/number-of-current-cases',
+        '/cards/number-of-treated-cases',
         '/cards/number-of-confirmed-cases',
         '/cards/attributes-of-confirmed-cases',
         '/cards/number-of-consultation',
