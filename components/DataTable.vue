@@ -19,7 +19,6 @@
         <template v-if="isVisibleScroll">
           <li>{{ $t('※横にスクロールできます') }}</li>
         </template>
-        <li>{{ $t('※退院には、死亡退院を含む') }}</li>
       </ul>
     </div>
     <template v-slot:infoPanel>

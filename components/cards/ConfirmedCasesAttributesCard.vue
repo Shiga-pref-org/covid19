@@ -152,13 +152,17 @@ export default {
       // 感染者数
       const patientsTable = formatTable(this.data)
 
-      // 陽性患者の属性 ヘッダー翻訳
-      for (const header of patientsTable.headers) {
-        header.text =
-          header.value === '退院' ? this.$t('退院') : this.$t(header.value)
+      // データの後方互換性を保つための処理
+      const indexOfDischarge = patientsTable.headers
+        .map(header => header.value)
+        .indexOf('退院')
+      if (indexOfDischarge !== -1) {
+        patientsTable.headers.splice(indexOfDischarge, 1)
       }
+
       // 陽性患者の属性 中身の翻訳
       for (const row of patientsTable.datasets) {
+        delete row['退院']
         row['居住地'] = this.$t(row['居住地'])
         row['性別'] = this.$t(row['性別'])
 
