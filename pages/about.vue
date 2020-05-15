@@ -178,7 +178,9 @@
       {{ $t('新型コロナウィルス感染症対策チーム') }}<br />
       電話: <a href="tel:077-528-3578">077-528-3578</a><br />
       Email:
-      <a href="mailto:eh00@pref.shiga.lg.jp">eh00@pref.shiga.lg.jp</a>
+      <a href="mailto:coronataisaku2@pref.shiga.lg.jp">{{
+        'coronataisaku2@pref.shiga.lg.jp'
+      }}</a>
 
       <h3 class="about-section">
         このウェブサイトに関すること
