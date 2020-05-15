@@ -176,7 +176,8 @@
         県内の新型コロナウイルス感染症動向に関すること
       </h3>
       {{ $t('新型コロナウィルス感染症対策チーム') }}<br />
-      電話: <a href="tel:077-528-3632">077-528-3632</a> <br />Email:
+      電話: <a href="tel:077-528-3578">077-528-3578</a><br />
+      Email:
       <a href="mailto:eh00@pref.shiga.lg.jp">eh00@pref.shiga.lg.jp</a>
 
       <h3 class="about-section">
