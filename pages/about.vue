@@ -173,19 +173,22 @@
     </TextCard>
     <TextCard :title="$t('お問い合わせ先')">
       <h3 class="about-section">
+        県内の新型コロナウイルス感染症動向に関すること
+      </h3>
+      {{ $t('新型コロナウィルス感染症対策チーム') }}<br />
+      電話: <a href="tel:077-528-3578">077-528-3578</a><br />
+      Email:
+      <a href="mailto:coronataisaku2@pref.shiga.lg.jp">{{
+        'coronataisaku2@pref.shiga.lg.jp'
+      }}</a>
+
+      <h3 class="about-section">
         このウェブサイトに関すること
       </h3>
       {{ $t('滋賀県総合企画部情報政策課') }}<br />
       {{ $t('電話') }}: <a href="tel:077-528-3292">077-528-3292</a><br />
       Email:
       <a href="mailto:it-pmo@pref.shiga.lg.jp">it-pmo@pref.shiga.lg.jp</a>
-
-      <h3 class="about-section">
-        県内の新型コロナウイルス感染症動向に関すること
-      </h3>
-      {{ $t('滋賀県健康医療福祉部薬務感染症対策課') }}<br />
-      電話: <a href="tel:077-528-3632">077-528-3632</a> <br />Email:
-      <a href="mailto:eh00@pref.shiga.lg.jp">eh00@pref.shiga.lg.jp</a>
     </TextCard>
   </div>
 </template>
