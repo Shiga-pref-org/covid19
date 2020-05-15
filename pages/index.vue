@@ -8,15 +8,13 @@
     <hero-link class="mb-4" />
     <whats-new v-if="newsItems" class="mb-4" :items="newsItems" />
     <v-row v-if="data" class="DataBlock">
-      <!-- TODO:データ連携はまだ作成していない -->
       <current-cases-number-card
-        :data="data.patients_summary.data"
-        :date="data.patients_summary.date"
+        :data="data.current_summary.data"
+        :date="data.current_summary.date"
       />
-      <!-- TODO:データ連携はまだ作成していない -->
       <treated-cases-number-card
-        :data="data.patients_summary.data"
-        :date="data.patients_summary.date"
+        :data="data.treated_summary.data"
+        :date="data.treated_summary.date"
       />
       <confirmed-cases-number-card
         :data="data.patients_summary.data"

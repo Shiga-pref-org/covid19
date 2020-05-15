@@ -1,16 +1,14 @@
 <template>
   <div v-if="data">
-    <!-- TODO: データ連携はまだ作成していない -->
     <current-cases-number-card
       v-if="this.$route.params.card == 'number-of-current-cases'"
-      :data="data.patients_summary.data"
-      :date="data.patients_summary.date"
+      :data="data.current_summary.data"
+      :date="data.current_summary.date"
     />
-    <!-- TODO: データ連携はまだ作成していない -->
     <treated-cases-number-card
       v-if="this.$route.params.card == 'number-of-treated-cases'"
-      :data="data.patients_summary.data"
-      :date="data.patients_summary.date"
+      :data="data.treated_summary.data"
+      :date="data.treated_summary.date"
     />
     <confirmed-cases-number-card
       v-if="this.$route.params.card == 'number-of-confirmed-cases'"

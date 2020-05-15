@@ -16,12 +16,21 @@
         :unit="displayInfo.unit"
       />
     </template>
+    <div class="note">
+      <slot />
+    </div>
   </data-view>
 </template>
 
 <i18n src="./TimeBarChart.i18n.json"></i18n>
 
-<style></style>
+<style lang="scss">
+.note {
+  padding: 8px;
+  font-size: 12px;
+  color: #808080;
+}
+</style>
 
 <script>
 import DataView from '@/components/DataView.vue'
