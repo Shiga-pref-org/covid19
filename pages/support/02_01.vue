@@ -6,13 +6,13 @@
     <div class="TextCard">
       <ul class="list_01">
         <li><nuxt-link to="/support/01_01#s01">収入が減っている</nuxt-link></li>
-        <li><a href="#s01" class="current">住宅を確保<br />して欲しい</a></li>
+        <li><nuxt-link to="/support/02_01#s01" class="current">住宅を確保<br />して欲しい</nuxt-link></li>
         <li><nuxt-link to="/support/03_01#s01">学費・仕送り<br>の不安がある</nuxt-link></li>
         <li><nuxt-link to="/support/05_01#s01">子どもの休校で<br />働けない</nuxt-link></li>
         <li><nuxt-link to="/support/04_01#s01">手元に<br>生活資金がない</nuxt-link></li>
       </ul>
 
-      <h3 id="s01" class="ttl_01">《 家賃が払えない 》</h3>
+      <h3 id="s01" class="ttl_01">《 住宅を確保してほしい 》</h3>
       <ul class="list_02">
         <li><a href="#s02"><span class="subdirectory-arrow-right"></span><p>家賃の支払いを支援してほしい</p></a></li>
         <li><nuxt-link to="/support/02_02#s02"><span class="subdirectory-arrow-right"></span><p>住宅を確保してほしい</p></nuxt-link></li>

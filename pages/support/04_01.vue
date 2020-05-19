@@ -9,7 +9,7 @@
         <li><nuxt-link to="/support/02_01#s01">住宅を確保<br />して欲しい</nuxt-link></li>
         <li><nuxt-link to="/support/03_01#s01">学費・仕送り<br />の不安がある</nuxt-link></li>
         <li><nuxt-link to="/support/05_01#s01">子どもの休校で<br />働けない</nuxt-link></li>
-        <li><a href="#s01" class="current">手元に<br />生活資金がない</a></li>
+        <li><nuxt-link to="/support/04_01#s01" class="current">手元に<br />生活資金がない</nuxt-link></li>
       </ul>
 
       <div id="s01">
@@ -42,7 +42,7 @@
           <div class="foot_contact">
             <p class="foot_ttl"><span>問い合わせ先</span></p>
             <p class="foot_txt">一般的なお問い合わせ：相談コールセンター</p>
-            <p class="foot_tel"><a href="0120-60-3999">0120-60-3999</a></p>
+            <p class="foot_tel"><a href="tel:0120-60-3999">0120-60-3999</a></p>
             <p>&nbsp;</p>
             <p class="foot_txt">お申し込み：お住まいの市町村社会福祉協議会または近畿労働金庫</p>
             <p class="foot_txt">近畿労働金庫のホームページ<br /><a href="https://www.rokin.or.jp/covid-19/">https://www.rokin.or.jp/covid-19/</a></p>
@@ -167,7 +167,7 @@
           <div class="foot_contact">
             <p class="foot_ttl"><span>問い合わせ先</span></p>
             <p class="foot_txt">個人向け緊急小口資金・総合支援資金相談コールセンター</p>
-            <p class="foot_tel"><a href="0120-46-1999">0120-46-1999</a></p>
+            <p class="foot_tel"><a href="tel:0120-46-1999">0120-46-1999</a></p>
             <p>&nbsp;</p>
             <p class="foot_ttl"><span>申　込　先</span></p>
             <div class="scroll_txt">※表はスライドしてご覧いただけます。</div>

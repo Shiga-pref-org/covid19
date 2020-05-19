@@ -12,7 +12,7 @@
         <li><nuxt-link to="/support/04_01#s01">手元に<br />生活資金がない</nuxt-link></li>
       </ul>
 
-      <h3 id="s01" class="ttl_01">《 家賃が払えない 》</h3>
+      <h3 id="s01" class="ttl_01">《 住宅を確保してほしい 》</h3>
       <ul class="list_02">
         <li><nuxt-link to="/support/02_01#s02"><span class="subdirectory-arrow-right"></span><p>家賃の支払いを支援してほしい</p></nuxt-link></li>
         <li><a href="#s02"><span class="subdirectory-arrow-right"></span><p>住宅を確保してほしい</p></a></li>
@@ -47,7 +47,7 @@
               滋賀県庁土木交通部住宅課公営住宅管理係
             </p>
             <p class="foot_tel">
-              <a href="077-528-4234">077-528-4234</a>
+              <a href="tel:077-528-4234">077-528-4234</a>
             </p>
           </div>
         </div>

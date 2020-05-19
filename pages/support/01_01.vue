@@ -6,7 +6,7 @@
     <div class="TextCard">
 
       <ul class="list_01">
-        <li><a href="#s01" class="current">収入が減っている</a></li>
+        <li><nuxt-link to="/support/01_01#s01" class="current">収入が減っている</nuxt-link></li>
         <li><nuxt-link to="/support/02_01#s01">住宅を確保<br />して欲しい</nuxt-link></li>
         <li><nuxt-link to="/support/03_01#s01">学費・仕送り<br />の不安がある</nuxt-link></li>
         <li><nuxt-link to="/support/05_01#s01">子どもの休校で<br />働けない</nuxt-link></li>
@@ -159,7 +159,7 @@
               中小企業　金融・給付金相談窓口
             </p>
             <p class="foot_tel">
-              <a href="0570-783183">0570-783183</a><span>（9:00〜17:00　平日･休日）</span>
+              <a href="tel:0570-783183">0570-783183</a><span>（9:00〜17:00　平日･休日）</span>
             </p>
           </div>
         </div>

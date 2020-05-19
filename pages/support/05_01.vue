@@ -8,7 +8,7 @@
         <li><nuxt-link to="/support/01_01#s01">収入が減っている</nuxt-link></li>
         <li><nuxt-link to="/support/02_01#s01">住宅を確保<br />して欲しい</nuxt-link></li>
         <li><nuxt-link to="/support/03_01#s01">学費・仕送り<br />の不安がある</nuxt-link></li>
-        <li><a href="#s01" class="current">子どもの休校で<br />働けない</a></li>
+        <li><nuxt-link to="/support/05_01#s01" class="current">子どもの休校で<br />働けない</nuxt-link></li>
         <li><nuxt-link to="/support/04_01#s01">手元に<br />生活資金がない</nuxt-link></li>
       </ul>
 
@@ -72,7 +72,7 @@
           <div class="foot_contact">
             <p class="foot_ttl"><span>問い合わせ先</span></p>
             <p class="foot_txt">学校等休業助成金・支援金、雇用調整助成金コールセンター</p>
-            <p class="foot_tel"><a href="0120-60-3999">0120-60-3999</a><span>（9:00〜21:00　土日祝含む）</span></p>
+            <p class="foot_tel"><a href="tel:0120-60-3999">0120-60-3999</a><span>（9:00〜21:00　土日祝含む）</span></p>
           </div>
         </div>
       </div>
