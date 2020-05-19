@@ -7,8 +7,9 @@
 
       <ul class="list_01">
         <li><nuxt-link to="/support/01_01#s01" class="current">収入が減っている</nuxt-link></li>
-        <li><nuxt-link to="/support/02_01#s01">家賃が払えない</nuxt-link></li>
+        <li><nuxt-link to="/support/02_01#s01">住宅を確保<br />して欲しい</nuxt-link></li>
         <li><nuxt-link to="/support/03_01#s01">学費・仕送り<br>の不安がある</nuxt-link></li>
+        <li><nuxt-link to="/support/05_01#s01">子どもの休校で<br />働けない</nuxt-link></li>
         <li><nuxt-link to="/support/04_01#s01">手元に<br>生活資金がない</nuxt-link></li>
       </ul>
 
@@ -51,7 +52,7 @@
           <h4>対象者（事業主・個人）</h4>
           <p>新型コロナウイルス感染症の流行に伴い、携帯電話料金等のお支払いを期限まで行うことが困難になっている方で、申出をされた方。</p>
           <h4>特別措置</h4>
-          <p>支払い期限が2020年2月以降になっている料金について、申出があった場合、2020年5月末まで支払い期限を延長。</p>
+          <p>支払い期限が2020年2月以降になっている料金について、申出があった場合、2020年6月末まで支払い期限を延長。</p>
           <div class="foot_contact">
             <p class="foot_ttl"><span>問い合わせ先</span></p>
             <p class="foot_txt">ＮＴＴドコモ</p>
@@ -198,7 +199,7 @@
       </div>
 
       <div class="orange_box editor">
-        <p class="ttl_02">特別定額給付金（仮称）</p>
+        <p class="ttl_02">特別定額給付金</p>
         <div class="orange_inner">
           <div class="bg_yellow">
             <p>新型コロナウイルス感染症の影響を踏まえ、定額により国民生活を支援する給付金です。</p>
