@@ -25,11 +25,13 @@ const templateUrls = {
     'https://raw.githubusercontent.com/Shiga-pref-org/covid19-flow/master/templates/contents/support01_05.html',
   '02_01':
     'https://raw.githubusercontent.com/Shiga-pref-org/covid19-flow/master/templates/contents/support02_01.html',
-  // '02_02':
-  //   'https://raw.githubusercontent.com/Shiga-pref-org/covid19-flow/master/templates/contents/support02_02.html',
+  '02_02':
+    'https://raw.githubusercontent.com/Shiga-pref-org/covid19-flow/master/templates/contents/support02_02.html',
   '03_01':
     'https://raw.githubusercontent.com/Shiga-pref-org/covid19-flow/master/templates/contents/support03_01.html',
   '04_01':
+    'https://raw.githubusercontent.com/Shiga-pref-org/covid19-flow/master/templates/contents/support04_01.html',
+  '05_01':
     'https://raw.githubusercontent.com/Shiga-pref-org/covid19-flow/master/templates/contents/support04_01.html'
 }
 
