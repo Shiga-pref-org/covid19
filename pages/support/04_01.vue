@@ -42,7 +42,7 @@
           <div class="foot_contact">
             <p class="foot_ttl"><span>問い合わせ先</span></p>
             <p class="foot_txt">一般的なお問い合わせ：相談コールセンター</p>
-            <p class="foot_tel"><a href="tel:0120-60-3999">0120-60-3999</a></p>
+            <p class="foot_tel"><a href="tel:0120-46-1999">0120-46-1999</a></p>
             <p>&nbsp;</p>
             <p class="foot_txt">お申し込み：お住まいの市町村社会福祉協議会または近畿労働金庫</p>
             <p class="foot_txt">近畿労働金庫のホームページ<br /><a href="https://www.rokin.or.jp/covid-19/">https://www.rokin.or.jp/covid-19/</a></p>
