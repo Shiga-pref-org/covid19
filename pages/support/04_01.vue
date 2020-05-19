@@ -6,20 +6,17 @@
     <div class="TextCard">
       <ul class="list_01">
         <li><nuxt-link to="/support/01_01#s01">収入が減っている</nuxt-link></li>
-        <li><nuxt-link to="/support/02_01#s01">家賃が払えない</nuxt-link></li>
-        <li>
-          <nuxt-link to="/support/03_01#s01">学費・仕送り<br />の不安がある</nuxt-link>
-        </li>
-        <li>
-          <a href="#s01" class="current">手元に<br />生活資金がない</a>
-        </li>
+        <li><nuxt-link to="/support/02_01#s01">住宅を確保<br />して欲しい</nuxt-link></li>
+        <li><nuxt-link to="/support/03_01#s01">学費・仕送り<br />の不安がある</nuxt-link></li>
+        <li><nuxt-link to="/support/05_01#s01">子どもの休校で<br />働けない</nuxt-link></li>
+        <li><a href="#s01" class="current">手元に<br />生活資金がない</a></li>
       </ul>
 
       <div id="s01">
         <div class="editor main_contents">
           <h2>手元に生活資金がない</h2>
 
-          <h3>生活福祉資金制度（緊急小口資金）</h3>
+          <h3>緊急小口資金（一時的な資金が必要な方［主に休業された方］）</h3>
 
           <div class="bg_gray">
             <p>
@@ -31,10 +28,11 @@
           <p>
             新型コロナウイルスの影響を受け、休業等により収入の減少があり、緊急かつ一時的な生計維持のための貸付を必要とする世帯。
           </p>
+          <p class="attention">※新型コロナウイルスの影響で収入の減少があれば、休業状態になくても対象となります。</p>
 
-          <h4>貸付限度額</h4>
+          <h4>貸付上限額</h4>
           <ul>
-            <li>学校等の休業、個人事業主等の特例の場合：２０万円以内</li>
+            <li>学校等の休業、個人事業主等の特例の場合：２０万円</li>
             <li>その他の場合：１０万円以内</li>
           </ul>
 
@@ -43,6 +41,135 @@
 
           <div class="foot_contact">
             <p class="foot_ttl"><span>問い合わせ先</span></p>
+            <p class="foot_txt">一般的なお問い合わせ：相談コールセンター</p>
+            <p class="foot_tel"><a href="0120-60-3999">0120-60-3999</a></p>
+            <p>&nbsp;</p>
+            <p class="foot_txt">お申し込み：お住まいの市町村社会福祉協議会または近畿労働金庫</p>
+            <p class="foot_txt">近畿労働金庫のホームページ<br /><a href="https://www.rokin.or.jp/covid-19/">https://www.rokin.or.jp/covid-19/</a></p>
+            <div class="scroll_txt">※表はスライドしてご覧いただけます。</div>
+            <div class="scroll-table">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>名称</th>
+                    <th>電話番号</th>
+                  </tr>
+                  <tr>
+                    <td>大津市社会福祉協議会</td>
+                    <td><a href="tel:077-525-9316">077-525-9316</a></td>
+                  </tr>
+                  <tr>
+                    <td>彦根市社会福祉協議会</td>
+                    <td><a href="tel:0749-22-2821">0749-22-2821</a></td>
+                  </tr>
+                  <tr>
+                    <td>長浜市社会福祉協議会<br />（長浜センター）</td>
+                    <td><a href="tel:0749-62-1804">0749-62-1804</a></td>
+                  </tr>
+                  <tr>
+                    <td>長浜市社会福祉協議会<br />（木之本センター）</td>
+                    <td><a href="tel:0749-82-5419">0749-82-5419</a></td>
+                  </tr>
+                  <tr>
+                    <td>近江八幡市社会福祉協議会</td>
+                    <td><a href="tel:0748-31-2677">0748-31-2677</a></td>
+                  </tr>
+                  <tr>
+                    <td>草津市社会福祉協議会</td>
+                    <td><a href="tel:077-562-0084">077-562-0084</a></td>
+                  </tr>
+                  <tr>
+                    <td>守山市社会福祉協議会</td>
+                    <td><a href="tel:077-583-2923">077-583-2923</a></td>
+                  </tr>
+                  <tr>
+                    <td>栗東市社会福祉協議会</td>
+                    <td><a href="tel:077-554-6105">077-554-6105</a></td>
+                  </tr>
+                  <tr>
+                    <td>野洲市社会福祉協議会</td>
+                    <td><a href="tel:077-589-4683">077-589-4683</a></td>
+                  </tr>
+                  <tr>
+                    <td>湖南市社会福祉協議会</td>
+                    <td><a href="tel:0748-72-4102">0748-72-4102</a></td>
+                  </tr>
+                  <tr>
+                    <td>甲賀市社会福祉協議会</td>
+                    <td><a href="tel:0748-62-8085">0748-62-8085</a></td>
+                  </tr>
+                  <tr>
+                    <td>高島市社会福祉協議会</td>
+                    <td><a href="tel:0740-25-5720">0740-25-5720</a></td>
+                  </tr>
+                  <tr>
+                    <td>米原市社会福祉協議会</td>
+                    <td><a href="tel:0749-54-3105">0749-54-3105</a></td>
+                  </tr>
+                  <tr>
+                    <td>東近江市社会福祉協議会</td>
+                    <td><a href="tel:0748-24-2940">0748-24-2940</a></td>
+                  </tr>
+                  <tr>
+                    <td>日野町社会福祉協議会</td>
+                    <td><a href="tel:0748-52-1219">0748-52-1219</a></td>
+                  </tr>
+                  <tr>
+                    <td>竜王町社会福祉協議会</td>
+                    <td><a href="tel:0748-58-1475">0748-58-1475</a></td>
+                  </tr>
+                  <tr>
+                    <td>愛荘町社会福祉協議会</td>
+                    <td><a href="tel:0749-42-7170">0749-42-7170</a></td>
+                  </tr>
+                  <tr>
+                    <td>豊郷町社会福祉協議会</td>
+                    <td><a href="tel:0749-35-8060">0749-35-8060</a></td>
+                  </tr>
+                  <tr>
+                    <td>甲良町社会福祉協議会</td>
+                    <td><a href="tel:0749-38-4667">0749-38-4667</a></td>
+                  </tr>
+                  <tr>
+                    <td>多賀町社会福祉協議会</td>
+                    <td><a href="tel:0749-48-8127">0749-48-8127</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <p>&nbsp;</p>
+
+          <h3>総合支援資金（生活の立て直しが必要な方［主に失業された方等］）</h3>
+
+          <div class="bg_gray">
+            <p>
+              新型コロナウイルス感染症の影響を踏まえ、貸付けの対象世帯を低所得世帯以外に拡大し、休業や失業等により生活資金でお悩みの方々を向けた、生活再建までの間に必要な生活費用の貸付を行います。
+            </p>
+          </div>
+
+          <h4>対象者（個人）</h4>
+          <p>
+            新型コロナウイルス感染症の影響を受け、収入の減少や失業等により生活に困窮し、日常生活の維持が困難となっている世帯。
+          </p>
+          <p class="attention">※新型コロナウイルスの影響で収入の減少があれば、失業状態になくても対象となります。</p>
+
+          <h4>貸付上限額</h4>
+          <ul>
+            <li>（２人以上）月２０万円以内</li>
+            <li>（単身）月１５万円以内（貸付期間：原則３か月以内）</li>
+          </ul>
+
+          <h4>貸付利子・保証人</h4>
+          <p>無利子・不要。</p>
+
+          <div class="foot_contact">
+            <p class="foot_ttl"><span>問い合わせ先</span></p>
+            <p class="foot_txt">個人向け緊急小口資金・総合支援資金相談コールセンター</p>
+            <p class="foot_tel"><a href="0120-46-1999">0120-46-1999</a></p>
+            <p>&nbsp;</p>
+            <p class="foot_ttl"><span>申　込　先</span></p>
             <div class="scroll_txt">※表はスライドしてご覧いただけます。</div>
             <div class="scroll-table">
               <table>
@@ -139,7 +266,7 @@
       </div>
 
       <div class="orange_box editor">
-        <p class="ttl_02">特別定額給付金（仮称）</p>
+        <p class="ttl_02">特別定額給付金</p>
         <div class="orange_inner">
           <div class="bg_yellow">
             <p>

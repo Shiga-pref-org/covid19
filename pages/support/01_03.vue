@@ -5,11 +5,11 @@
   <div>
     <div class="TextCard">
 
-
       <ul class="list_01">
         <li><nuxt-link to="/support/01_01#s01" class="current">収入が減っている</nuxt-link></li>
-        <li><nuxt-link to="/support/02_01#s01">家賃が払えない</nuxt-link></li>
+        <li><nuxt-link to="/support/02_01#s01">住宅を確保<br />して欲しい</nuxt-link></li>
         <li><nuxt-link to="/support/03_01#s01">学費・仕送り<br>の不安がある</nuxt-link></li>
+        <li><nuxt-link to="/support/05_01#s01">子どもの休校で<br />働けない</nuxt-link></li>
         <li><nuxt-link to="/support/04_01#s01">手元に<br>生活資金がない</nuxt-link></li>
       </ul>
 
@@ -192,7 +192,7 @@
         </div>
 
         <div class="orange_box editor">
-          <p class="ttl_02">特別定額給付金（仮称）</p>
+          <p class="ttl_02">特別定額給付金</p>
           <div class="orange_inner">
             <div class="bg_yellow">
               <p>新型コロナウイルス感染症の影響を踏まえ、定額により国民生活を支援する給付金です。</p>
