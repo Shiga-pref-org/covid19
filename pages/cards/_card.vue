@@ -168,7 +168,7 @@ export default {
         title = this.$t('陽性患者の属性')
         break
       case 'number-of-consultation':
-        title = this.$t('帰国者・接触者専門外来受診件数')
+        title = this.$t('帰国者・接触者外来受診件数')
         break
       case 'number-of-tests':
         title = this.$t('PCR検査実施件数')
