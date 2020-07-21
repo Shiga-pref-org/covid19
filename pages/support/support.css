@@ -689,3 +689,8 @@
   margin: 40px;
   padding: 30px;
 }
+
+.yuushi-table-wrap {
+  overflow: auto;
+  white-space: no-wrap;
+}
