@@ -8,7 +8,7 @@
   margin-bottom: 12px
 }
 
-.TextCard {
+.yuushi-table.TextCard {
   background-color: #fff;
   box-shadow: 0 0 2px rgba(0, 0, 0, .15);
   border: .5px solid #d9d9d9 !important;
@@ -696,7 +696,7 @@
 }
 ol.yachin-support-conditions {
   list-style-type: circled-decimal;
-  padding-left: none;
+  padding-left: none !important;
 }
 ol.yachin-support-conditions li {
   margin-bottom: 4px;
