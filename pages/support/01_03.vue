@@ -63,9 +63,9 @@
           <div class="bg_white">
             <h3>守山市</h3>
             <h4>新型コロナウイルス感染症関連情報</h4>
-            <p><a href="http://www.city.moriyama.lg.jp/korona/2020korona_index.html">http://www.city.moriyama.lg.jp/korona/2020korona_index.html</a></p>
+            <p><a href="http://www.city.moriyama.lg.jp/korona/korona_index.html">http://www.city.moriyama.lg.jp/korona/korona_index.html</a></p>
             <h4>税の納付が困難な方へ</h4>
-            <p><a href="http://www.city.moriyama.lg.jp/nozei/yuuyoseido_corona.html">http://www.city.moriyama.lg.jp/nozei/yuuyoseido_corona.html</a></p>
+            <p><a href="http://www.city.moriyama.lg.jp/nozei/20200428_nozei.html">http://www.city.moriyama.lg.jp/nozei/20200428_nozei.html</a></p>
           </div>
 
           <div class="bg_white">
@@ -101,7 +101,7 @@
           <div class="bg_white">
             <h3>東近江市</h3>
             <h4>新型コロナウイルス感染症関連情報</h4>
-            <p><a href="http://www.city.higashiomi.shiga.jp/category/18-1-8-0-0.html">http://www.city.higashiomi.shiga.jp/category/18-1-8-0-0.html</a></p>
+            <p><a href="http://www.city.higashiomi.shiga.jp/category/23-0-0-0-0.html">http://www.city.higashiomi.shiga.jp/category/23-0-0-0-0.html</a></p>
             <h4>税の納付が困難な方へ</h4>
             <p><a href="http://www.city.higashiomi.shiga.jp/0000011491.html">http://www.city.higashiomi.shiga.jp/0000011491.html</a></p>
           </div>
@@ -130,8 +130,10 @@
 
           <div class="bg_white">
             <h3>彦根市</h3>
+            <h4>新型コロナウイルス感染症関連情報</h4>
+            <p><a href="https://www.city.hikone.lg.jp/daiji/corona/index.html">https://www.city.hikone.lg.jp/daiji/corona/index.html</a></p>
             <h4>税の納付が困難な方へ</h4>
-            <p><a href="https://www.city.hikone.lg.jp/daiji/12936.html">https://www.city.hikone.lg.jp/daiji/12936.html</a></p>
+            <p><a href="https://www.city.hikone.lg.jp/daiji/corona/s1/s/index.html">https://www.city.hikone.lg.jp/daiji/corona/s1/s/index.html</a></p>
           </div>
 
           <div class="bg_white">
@@ -157,8 +159,8 @@
 
           <div class="bg_white">
             <h3>甲良町</h3>
-            <h4>甲良町公式ホームページ</h4>
-            <p><a href="http://www.kouratown.jp/">http://www.kouratown.jp/</a></p>
+            <h4>新型コロナウイルス感染症関連情報</h4>
+            <p><a href="http://www.kouratown.jp/cyonososhiki/sangyoka/syokorodokakari/1590643851852.html">http://www.kouratown.jp/cyonososhiki/sangyoka/syokorodokakari/1590643851852.html</a></p>
           </div>
 
           <div class="bg_white">

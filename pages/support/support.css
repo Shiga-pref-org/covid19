@@ -8,7 +8,7 @@
   margin-bottom: 12px
 }
 
-.TextCard {
+.yuushi-table.TextCard {
   background-color: #fff;
   box-shadow: 0 0 2px rgba(0, 0, 0, .15);
   border: .5px solid #d9d9d9 !important;
@@ -682,4 +682,33 @@
 	top: 1px;
 	left: 0;
 	font-size: 23px;
+}
+.red-box {
+  border: 2px solid #ED6D33;
+  border-radius: 8px;
+  margin: 40px;
+  padding: 30px;
+}
+
+.yuushi-table-wrap {
+  overflow: auto;
+  white-space: no-wrap;
+}
+ol.yachin-support-conditions {
+  list-style-type: circled-decimal;
+  padding-left: 0 !important;
+}
+ol.yachin-support-conditions li {
+  margin-bottom: 4px;
+}
+ol.yachin-support-conditions li::before {
+  content: none;
+}
+ol.yachin-support-conditions ul {
+	margin-top: 4px;
+	margin-bottom: 0;
+	margin-left: 1em;
+  }
+ol.yachin-support-conditions ul > li::before {
+  content: '・';
 }

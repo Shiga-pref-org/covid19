@@ -26,33 +26,41 @@
         <div class="editor main_contents">
           <h2>売上げが落ち込んでいる</h2>
 
-          <h3>中小企業者向け制度融資</h3>
+          <h3>新型コロナウイルス感染症対応資金</h3>
           <div class="bg_gray">
             <p>
               滋賀県では、新型コロナウイルス感染症の発生により、経営に影響を受けている中小企業者の方に御利用いただける融資制度を御用意しています。
             </p>
           </div>
-          <h4>対象者（事業主）</h4>
-          <ul>
-            <li>
-              最近１か月間の売上高等が前年同月比で１５％以上減少している場合<br />→【セーフティネット資金（６項）】の活用を御検討ください
-            </li>
-            <li>
-              国が指定する業種に属し、最近１か月間の売上高等が前年同月比で５％以上減少している場合<br />→【セーフティネット資金（５号）】の活用を御検討ください
-            </li>
-            <li>
-              最近１か月間の売上高等が前年同月比で２０％以上減少している場合<br />→【セーフティネット資金（４号）】の活用を御検討ください
-            </li>
-            <li>
-              セーフティネット資金がご利用できない場合<br />→【緊急経済対策資金】の活用を御検討ください
-            </li>
-          </ul>
+          <h4>対象者</h4>
+          <p>
+          売上高等の減少により、中小企業信用保険法第２条第５項第４号、第５号および第６項のいずれかに該当する者として市町村長の認定を受けた中小企業者、協同組合等。（ただし県内に事業所を有するものに限る）
+          </p>
+          <h4>対象要件</h4>
+          <p>セーフティネット保証４号・５号、危機関連保証のいずれかの認定を受け、以下の要件を満たせば、保証料・利子の減免を行います。</p>
+          <div class="yuushi-table-wrap">
+            <table>
+              <thead>
+                <tr><th> </th><th>売上高▲５％</th><th>売上高▲１５％</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>個人事業主（小規模のみ）</td><td colspan="2" style="text-align:center">保証料ゼロ、実質金利ゼロ（※）</td></tr>
+                <tr><td>小・中規模事業者（上記除く）</td><td style="text-align:center">保証料１／２</td><td style="text-align:center">保証料ゼロ、実質金利ゼロ（※）</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p> ※中小企業者等が金融機関に支払った利子（新規枠1.0％、借換枠1.5％）に関し、後日、県が金融機関を通じて補助します。（当初3年間）</p>
+
+          <h4>融資上限額</h4>
+          <p>
+          ４０００万円
+          </p>
           <h4>詳細・問い合わせ先</h4>
           <p>
-            <a
-              href="https://www.pref.shiga.lg.jp/ippan/shigotosangyou/kigyou/309618.html"
-              >https://www.pref.shiga.lg.jp/ippan/shigotosangyou/kigyou/309618.html</a
-            >
+            <a href="https://www.pref.shiga.lg.jp/ippan/shigotosangyou/kigyou/309618.html">
+              https://www.pref.shiga.lg.jp/ippan/shigotosangyou/kigyou/309618.html
+            </a>
           </p>
 
           <p>&nbsp;</p>
@@ -73,40 +81,9 @@
           </p>
           <h4>詳細・問い合わせ先</h4>
           <p>
-            <a
-              href="https://www.pref.shiga.lg.jp/ippan/shigotosangyou/shigoto/310828.html"
-              >https://www.pref.shiga.lg.jp/ippan/shigotosangyou/shigoto/310828.html</a
-            >
-          </p>
-
-          <p>&nbsp;</p>
-
-          <h3>
-            新型コロナウイルス感染症対策経営力強化補助金
-          </h3>
-          <div class="bg_gray">
-            <p>
-              新型コロナウイルス感染症の影響を受けた、または受けると見込まれる県内中小企業等の今後の事業活動に資する人材育成、働き方改革、新たな販路の開拓等の取組に対し、予算の範囲内で経費の一部を補助することにより、企業の経営基盤強化、本県経済の活性化を図ることを目的とします。
-            </p>
-          </div>
-          <h4>対象者（事業主）</h4>
-          <p>
-            新型コロナウイルス感染症の影響を受けた、または受けると見込まれる滋賀県内に事務所または事業所を有する中小企業者等のみなさま。
-          </p>
-          <h4>対象となる事業</h4>
-          <p>
-            交付決定の日から令和２年１０月３０日の間に実施される、「人材育成・確保」「働き方改革・職場環境改善」「インターネット等を活用した新たな販路開拓」に関する事業。
-          </p>
-          <h4>補助限度額</h4>
-          <p>５０万円　※補助金申請下限額は２０万円</p>
-          <h4>補助率</h4>
-          <p>中小企業者：２／３　　小規模事業者：３／４</p>
-          <h4>詳細・問い合わせ先</h4>
-          <p>
-            <a
-              href="https://www.pref.shiga.lg.jp/ippan/shigotosangyou/syougyou/302793.html"
-              >https://www.pref.shiga.lg.jp/ippan/shigotosangyou/syougyou/302793.html</a
-            >
+            <a href="https://www.pref.shiga.lg.jp/ippan/shigotosangyou/shigoto/311528.html">
+              https://www.pref.shiga.lg.jp/ippan/shigotosangyou/shigoto/311528.html
+            </a>
           </p>
 
           <p>&nbsp;</p>
@@ -119,10 +96,9 @@
           </div>
           <h4>詳細・問い合わせ先</h4>
           <p>
-            <a
-              href="https://www.pref.shiga.lg.jp/ippan/shigotosangyou/nougyou/seisangizyutsu/300372.html"
-              >https://www.pref.shiga.lg.jp/ippan/shigotosangyou/nougyou/seisangizyutsu/300372.html</a
-            >
+            <a href="https://www.pref.shiga.lg.jp/ippan/shigotosangyou/nougyou/seisangizyutsu/300372.html">
+              https://www.pref.shiga.lg.jp/ippan/shigotosangyou/nougyou/seisangizyutsu/300372.html
+            </a>
           </p>
 
           <p>&nbsp;</p>
@@ -140,7 +116,7 @@
               コロナウイルス感染症の感染症の影響により、売上げが前年同月比で５０％以上減少しているもの
             </li>
             <li>
-              資本金１０億円以上の大企業を除き、中堅企業、中小企業、小規模事業者、フリーランスを含む個人事業者
+              資本金１０億円以上の大企業を除く、中堅企業、中小企業、小規模事業者、フリーランスを含む個人事業者を対象とします。また、医療法人、農業法人、NPO法人など、会社以外の法人についても幅広く対象となります
             </li>
           </ul>
           <h4>給付額</h4>
@@ -156,10 +132,60 @@
           <div class="foot_contact">
             <p class="foot_ttl"><span>問い合わせ先</span></p>
             <p class="foot_txt">
-              中小企業　金融・給付金相談窓口
+              持続化給付金事業コールセンター
             </p>
             <p class="foot_tel">
-              <a href="tel:0570-783183">0570-783183</a><span>（9:00〜17:00　平日･休日）</span>
+              <a href="tel:0120-115-570">0120-115-570</a><span>（8:30〜19:00　土曜日を除く）</span>
+            </p>
+            <p>
+              <a href="https://www.meti.go.jp/covid-19/pdf/kyufukin.pdf">https://www.meti.go.jp/covid-19/pdf/kyufukin.pdf</a><br />
+              申請サイト：<a href="https://www.jizokuka-kyufu.jp/">https://www.jizokuka-kyufu.jp/</a>
+            </p>
+          </div>
+
+
+          <p>&nbsp;</p>
+
+          <h3>家賃支援給付金</h3>
+          <div class="bg_gray">
+            <p>
+              新型コロナウイルス感染症を契機とした５月の緊急事態宣言の延長等により、売上の急減に直面する事業者の事業継続を下支えするため、地代・家賃（賃料）の負担を軽減することを目的として、テナント事業者に対して「家賃支援給付金」を支給します。
+            </p>
+          </div>
+          <h4>支給対象（①②③すべてを満たす事業者）</h4>
+          <ol class="yachin-support-conditions">
+            <li>
+              ① 資本金１０億円未満の中堅企業、中小企業、小規模事業者、フリーランスを含む個人事業者
+            </li>
+            <li>
+              ② ２０２０年５月～１２月の売上高について
+              <ul>
+                <li>１か月で前年同月比で５０％以上減少 または、</li>
+                <li>連続する３か月の合計で前年同期比で３０％以上減少</li>
+              </ul>
+            <li>
+              ③ 自らの事業のために占有する土地・建物の賃料の支払い
+            </li>
+          </ol>
+          <h4>給付額・給付率</h4>
+          <ul>
+            <li>
+              申請時の直近の支払賃料（月額）に基づいて算出される給付額（月額）を基に、６か月分の給付額に相当する額<br />
+              法人：最大６００万円、個人事業者：最大３００万円
+            </li>
+          </ul>
+
+          <div class="foot_contact">
+            <p class="foot_ttl"><span>問い合わせ先</span></p>
+            <p class="foot_txt">
+              家賃支援給付金コールセンター
+            </p>
+            <p class="foot_tel">
+              <a href="tel:0120-653-930">0120-653-930</a><span>（8:30〜19:00　平日･土日祝日）</span>
+            </p>
+            <p>
+              <a href="https://www.meti.go.jp/covid-19/yachin-kyufu/pdf/yachin-kyufu.pdf">https://www.meti.go.jp/covid-19/yachin-kyufu/pdf/yachin-kyufu.pdf</a><br />
+              家賃支援給付金ポータルサイト：<a href="https://yachin-shien.go.jp/">https://yachin-shien.go.jp/</a>
             </p>
           </div>
         </div>
