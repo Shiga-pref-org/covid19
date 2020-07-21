@@ -683,3 +683,9 @@
 	left: 0;
 	font-size: 23px;
 }
+.red-box {
+  border: 2px solid #ED6D33;
+  border-radius: 8px;
+  margin: 40px;
+  padding: 30px;
+}
