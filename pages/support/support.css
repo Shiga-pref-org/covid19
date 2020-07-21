@@ -694,3 +694,19 @@
   overflow: auto;
   white-space: no-wrap;
 }
+ol.yachin-support-conditions {
+  list-style-type: circled-decimal;
+}
+ol.yachin-support-conditions li {
+  margin-left: 1em;
+  margin-bottom: 4px;
+}
+ol.yachin-support-conditions li::before {
+  content: none;
+}
+ol.yachin-support-conditions ul {
+  margin-bottom: 0;
+}
+ol.yachin-support-conditions ul > li::before {
+  content: '・';
+}
