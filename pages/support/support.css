@@ -696,6 +696,7 @@
 }
 ol.yachin-support-conditions {
   list-style-type: circled-decimal;
+  padding-left: none;
 }
 ol.yachin-support-conditions li {
   margin-bottom: 4px;
