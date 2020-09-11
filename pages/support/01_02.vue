@@ -41,7 +41,7 @@
             <tr><td>２０２０年３月分、４月分</td><td>４か月間</td</tr>
             <tr><td>２０２０年５月分</td><td>３か月間</td</tr>
             <tr><td>２０２０年６月分</td><td>２か月間</td</tr>
-            <tr><td>２０２０年７月分</td><td>１か月間</td</tr>
+            <tr><td>２０２０年７月分</td><td>１か月間</td></tr>
           </table>
           <div class="foot_contact">
             <p class="foot_ttl"><span>問い合わせ先</span></p>

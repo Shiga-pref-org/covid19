@@ -17,10 +17,6 @@
         :data="data.patients.data"
         :date="data.patients.date"
       />
-      <consults-number-card
-        :data="data.consults.data"
-        :date="data.consults.date"
-      />
       <tests-number-card :data="data.tests.data" :date="data.tests.date" />
       <querents-number-card
         :data="data.querents.data"
@@ -49,7 +45,6 @@ import HeroLink from '@/components/cards/HeroLink.vue'
 
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
-import ConsultsNumberCard from '@/components/cards/ConsultsNumberCard'
 import TestsNumberCard from '@/components/cards/TestsNumberCard'
 import QuerentsNumberCard from '@/components/cards/QuerentsNumberCard'
 import GeneralQuerentsNumberCard from '@/components/cards/GeneralQuerentsNumberCard'
@@ -63,7 +58,6 @@ export default {
     WhatsNew,
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
-    ConsultsNumberCard,
     TestsNumberCard,
     QuerentsNumberCard,
     GeneralQuerentsNumberCard,
