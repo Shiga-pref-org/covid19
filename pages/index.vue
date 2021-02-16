@@ -5,6 +5,7 @@
       :title="headerItem.title"
       :date="lastUpdate"
     />
+    <closing-notice />
     <hero-link class="mb-4" />
     <whats-new v-if="newsItems" class="mb-4" :items="newsItems" />
     <v-row v-if="data" class="DataBlock">
@@ -41,6 +42,7 @@
 import PageHeader from '@/components/PageHeader.vue'
 import WhatsNew from '@/components/WhatsNew.vue'
 
+import ClosingNotice from '@/components/cards/ClosingNotice.vue'
 import HeroLink from '@/components/cards/HeroLink.vue'
 
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
@@ -54,6 +56,7 @@ import LineInvitationCard from '@/components/cards/LineInvitationCard'
 export default {
   components: {
     PageHeader,
+    ClosingNotice,
     HeroLink,
     WhatsNew,
     ConfirmedCasesNumberCard,
